@@ -1,0 +1,25 @@
+.social-media-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--clients-list-border-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      fill: var(--background);
+    }
+  }
+}
