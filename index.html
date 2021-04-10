@@ -31,6 +31,11 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="burger-btn data-menu-button">
+                <svg class="burger-icon">
+                    <use href="./images/icons/symbol-defs.svg#icon-burger"></use>
+                </svg>
+            </button>
             <ul class="contacts list">
                 <li class="contacts__item">
                     <a class="contacts__link link" href="mailto:info@devstudio.com">
@@ -52,16 +57,40 @@
                 </li>
             </ul>
         </div>
+        <div class="mobile-menu data-menu is-open">
+            <button type="button" class="mobile-menu-close-btn data-menu-close">
+                <svg class="mobile-menu-close-icon">
+                    <use href="./images/icons/symbol-defs.svg#mobile-menu-close-icon"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__list list">
+                <li class="mobile-menu__item">
+                    <a href="" class="mobile-menu__link link">Студия</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="" class="mobile-menu__link link">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="" class="mobile-menu__link link">Контакты</a>
+                </li>
+            </ul>
+
+
+        </div>
     </header>
     <main>
+
+        
         <!--HERO-->
-        <section class="hero">
+       <!--  <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
-        
+    -->
+
+    <!-- 
         <section class="qualities">
             <div class="container">
             <h2  class="visually-hidden">Характеристики</h2>
@@ -112,8 +141,9 @@
             </ul>
             </div>
         </section>
+-->
 
-        <section class="what-we-do">
+        <!-- <section class="what-we-do">
             <div class="container">
             <h2 class="title">Чем мы занимаемся</h2>
             <ul class="what-we-do__list list">
@@ -139,7 +169,8 @@
             </ul>
             </div>
         </section>
-
+        -->
+<!-- 
         <section class="team">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
@@ -327,8 +358,9 @@
                 </ul>
             </div>
         </section>
+        -->
 
-
+<!-- 
         <section class="clients">
             <div class="container">
             <h2 class="title">Постоянные клиенты</h2>
@@ -391,9 +423,10 @@
         </ul>
         </div>
         </section>
+        -->
 
     </main>
-
+<!-- 
 <footer class="footer">
     <div class="container footer__container">
         <div class="footer__wrapper">
@@ -471,7 +504,9 @@
     </div>
 
 </footer>
+-->
 
+<!-- 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button class="modal-close-btn" data-modal-close>
@@ -525,8 +560,12 @@
 
 
     </div>
-</div>
+</div> -->
+<!-- 
 <script src="./js/modal.js"></script>
+-->
+
+<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
