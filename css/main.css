@@ -1032,6 +1032,12 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
+@media screen and (max-width: 1200px) {
+  .what-we-do {
+    display: none;
+  }
+}
+
 .team {
   background: var(--team-background);
   padding-top: 94px;
