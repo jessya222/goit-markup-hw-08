@@ -869,29 +869,19 @@ img {
   max-width: 1600px;
   margin: 0 auto;
 }*/
-.qualities {
-  padding-top: 94px;
-  padding-bottom: 47px;
-}
-
 .qualities__list {
-  display: flex;
-  align-items: center;
-  margin-left: -30px;
-  margin-top: -30px;
+  justify-content: center;
+  padding-top: 60px;
 }
 
 .qualities__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .qualities__icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
   height: 120px;
   background: var(--team-background);
   border-radius: 4px;
@@ -906,6 +896,8 @@ img {
   text-transform: uppercase;
   margin-bottom: 10px;
   color: var(--color);
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .qualities .description {
@@ -913,9 +905,95 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--description-color);
-  width: 270px;
 }
 
+@media screen and (min-width: 768px) {
+  .qualities__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+  }
+  .qualities__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  .qualities__title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .qualities__list {
+    align-items: center;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .qualities__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .qualities__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background: var(--team-background);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
+
+/*
+.qualities {
+  padding-top: 94px;
+  padding-bottom: 47px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  &__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background: var(--team-background);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--color);
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--description-color);
+    width: 270px;
+  }
+
+*/
 .what-we-do {
   padding-top: 47px;
   padding-bottom: 94px;
