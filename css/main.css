@@ -87,7 +87,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 
@@ -535,7 +535,7 @@ img {
   .nav {
     display: flex;
     align-items: center;
-    margin-left: 93px;
+    margin-left: 88px;
   }
   .nav__list {
     display: flex;
@@ -583,9 +583,7 @@ img {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-bottom: 0;
-    margin-left: 70px;
-    margin-right: 0;
+    margin-left: auto;
   }
   .contacts__item {
     margin-bottom: 10px;
