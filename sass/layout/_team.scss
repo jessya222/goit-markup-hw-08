@@ -71,6 +71,11 @@
     &__item {
       flex-basis: calc(100% / 4 - 30px);
     }
+
+    &__wrapper {
+      padding-right: 32px;
+      padding-left: 32px;
+    }
   }
 }
 /*

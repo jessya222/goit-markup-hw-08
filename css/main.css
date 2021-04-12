@@ -1115,9 +1115,13 @@ img {
   .team__item {
     flex-basis: calc(100% / 4 - 30px);
   }
+  .team__wrapper {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
 }
 
-/*w
+/*
 .team {
   background: var(--team-background);
   padding-top: 94px;
