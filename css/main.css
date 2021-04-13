@@ -1405,9 +1405,6 @@ img {
     display: flex;
     flex-direction: column;
   }
-  .footer__form-desc {
-    text-align: left;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1423,6 +1420,9 @@ img {
   }
   .footer__form-wrapper {
     margin-left: 93px;
+  }
+  .footer__form-desc {
+    text-align: left;
   }
   .footer .address__item:not(:last-child) {
     margin-bottom: 9px;

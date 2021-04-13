@@ -139,10 +139,6 @@
       display: flex;
       flex-direction: column;
     }
-
-    &__form-desc {
-      text-align: left;
-    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -160,6 +156,10 @@
 
     &__form-wrapper {
       margin-left: 93px;
+    }
+
+    &__form-desc {
+      text-align: left;
     }
 
     .address {
