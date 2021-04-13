@@ -433,11 +433,12 @@ img {
 }
 
 .form-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   min-width: 200px;
   height: 50px;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 28px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1373,7 +1374,7 @@ img {
 }
 
 .footer .form .form-input {
-  width: 100%;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1392,6 +1393,17 @@ img {
 .footer .form .form-input:focus {
   border: 1px solid var(--accent-color);
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer__form-wrapper {
+    display: block;
+  }
 }
 
 /*.footer {
