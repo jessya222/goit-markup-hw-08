@@ -1401,8 +1401,38 @@ img {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .footer .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__form-desc {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .form {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .footer .form .form-input {
+    width: 358px;
+    margin-right: 12px;
+  }
   .footer__form-wrapper {
-    display: block;
+    margin-left: 93px;
+  }
+  .footer .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer__wrapper {
+    text-align: left;
+    margin-right: 70px;
+  }
+  .footer .footer-social-links {
+    text-align: left;
   }
 }
 

@@ -135,8 +135,46 @@
       justify-content: space-around;
     }
 
+    .form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__form-desc {
+      text-align: left;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .form {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      align-items: stretch;
+
+      .form-input {
+        width: 358px;
+        margin-right: 12px;
+      }
+    }
+
     &__form-wrapper {
-      display: block;
+      margin-left: 93px;
+    }
+
+    .address {
+      &__item:not(:last-child) {
+        margin-bottom: 9px;
+      }
+    }
+
+    &__wrapper {
+      text-align: left;
+      margin-right: 70px;
+    }
+
+    .footer-social-links {
+      text-align: left;
     }
   }
 }
