@@ -1727,14 +1727,8 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio .cards__item__item:hover {
+.portfolio .cards__item:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.portfolio .cards__link:hover .portfolio .cards__overlay,
-.portfolio .cards__link:focus .portfolio .cards__overlay {
-  transform: translateY(0%);
-  opacity: 1;
 }
 
 .portfolio .cards__wrapper {
@@ -1757,6 +1751,11 @@ img {
   opacity: 0;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio .cards__overlay:hover, .portfolio .cards__overlay:focus {
+  transform: translateY(0%);
+  opacity: 1;
 }
 
 .portfolio .cards__description {
@@ -1806,6 +1805,10 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
   .portfolio .cards__item {
     flex-basis: calc(100% / 3 - 30px);
   }
