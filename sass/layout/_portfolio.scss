@@ -1,4 +1,21 @@
 .portfolio {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    &__item {
+      margin-right: 8px;
+      margin-top: 15px;
+    }
+  }
+}
+
+/*
+.portfolio {
   padding-bottom: 94px;
   padding-top: 94px;
 
@@ -88,3 +105,4 @@
     }
   }
 }
+*/

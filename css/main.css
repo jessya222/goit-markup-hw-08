@@ -421,6 +421,7 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
   border: 0px;
+  border-radius: 4px;
   background: var(--team-background);
   padding: 6px 22px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1706,91 +1707,111 @@ img {
 }
 */
 .portfolio {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .portfolio .filter {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-left: -8px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .portfolio .filter__item {
-  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 15px;
 }
 
-.portfolio .cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
+/*
+.portfolio {
+  padding-bottom: 94px;
+  padding-top: 94px;
 
-.portfolio .cards__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-left: -8px;
 
-.portfolio .cards__item__item:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+    &__item {
+      margin-left: 8px;
+    }
+  }
 
-.portfolio .cards__link:hover .portfolio .cards__overlay,
-.portfolio .cards__link:focus .portfolio .cards__overlay {
-  transform: translateY(0%);
-  opacity: 1;
-}
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
 
-.portfolio .cards__wrapper {
-  position: relative;
-  overflow: hidden;
-}
+    &__item {
+      flex-basis: calc(100% / 3 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.portfolio .cards__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
-  color: var(--background);
-  padding: 63px 24px;
-  overflow: auto;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+      &__item:hover {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+          0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+          0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
 
-.portfolio .cards__description {
-  background: var(--background);
-  border-right: 1px solid var(--portfolio-border-color);
-  border-bottom: 1px solid var(--portfolio-border-color);
-  border-left: 1px solid var(--portfolio-border-color);
-  border-top: none;
-  box-sizing: border-box;
-  padding: 20px 24px;
-}
+    &__link:hover &__overlay,
+    &__link:focus &__overlay {
+      transform: translateY(0%);
+      opacity: 1;
+    }
 
-.portfolio .cards__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--color);
-  margin-bottom: 4px;
-}
+    &__wrapper {
+      position: relative;
+      overflow: hidden;
+    }
 
-.portfolio .cards__category {
-  font-size: 16px;
-  line-height: 1.89;
-  letter-spacing: 0.03em;
-  color: var(--description-color);
+    &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: rgba(33, 150, 243, 0.9);
+      color: var(--background);
+      padding: 63px 24px;
+      overflow: auto;
+      font-size: 18px;
+      line-height: 1.56;
+      letter-spacing: 0.03em;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__description {
+      background: var(--background);
+      border-right: 1px solid var(--portfolio-border-color);
+      border-bottom: 1px solid var(--portfolio-border-color);
+      border-left: 1px solid var(--portfolio-border-color);
+      border-top: none;
+      box-sizing: border-box;
+      padding: 20px 24px;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+      color: var(--color);
+      margin-bottom: 4px;
+    }
+
+    &__category {
+      font-size: 16px;
+      line-height: 1.89;
+      letter-spacing: 0.03em;
+      color: var(--description-color);
+    }
+  }
 }
+*/
 /*# sourceMappingURL=main.css.map */
