@@ -1753,7 +1753,8 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio .cards__overlay:hover, .portfolio .cards__overlay:focus {
+.portfolio .cards__link:hover .portfolio .cards__overlay,
+.portfolio .cards__link:focus .portfolio .cards__overlay {
   transform: translateY(0%);
   opacity: 1;
 }
