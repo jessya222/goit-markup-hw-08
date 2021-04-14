@@ -420,7 +420,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-  border: 0px;
+  border: none;
   border-radius: 4px;
   background: var(--team-background);
   padding: 6px 22px;
@@ -1783,6 +1783,32 @@ img {
   line-height: 1.89;
   letter-spacing: 0.03em;
   color: var(--description-color);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio .filter {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .portfolio .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .portfolio .cards__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio .cards__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 /*
