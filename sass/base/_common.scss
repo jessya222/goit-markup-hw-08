@@ -1,6 +1,10 @@
 body {
   font-family: var(--main-font);
   color: var(--color);
+  overflow-x: hidden;
+}
+html {
+  overflow-x: hidden;
 }
 
 h1,
