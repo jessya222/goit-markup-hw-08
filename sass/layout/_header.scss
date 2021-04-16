@@ -138,14 +138,26 @@
 
 @media screen and (min-width: 250px) and (max-width: 320px) {
   .mobile-menu {
-    &__link {
+    &__item {
       font-size: 26px;
     }
   }
 
   .mobile-contacts {
+    &__list {
+      padding-top: 180px;
+    }
     &__link {
+      font-size: 20px;
+    }
+    &__link--current {
       font-size: 24px;
+    }
+  }
+
+  .mobile-social__list {
+    &__link {
+      font-size: 14px;
     }
   }
 }
