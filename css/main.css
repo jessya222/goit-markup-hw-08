@@ -158,21 +158,15 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 580px;
+  width: 100%;
+  max-width: 450px;
+  min-height: 580px;
   background-color: var(--background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
-}
-
-@media screen and (min-width: 480px) {
-  .modal {
-    width: 100%;
-    max-width: 450px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -420,6 +414,7 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .portfolio-btn {
@@ -477,6 +472,15 @@ img {
 .header {
   background: var(--background);
   border-bottom: 1px solid var(--header-border-color);
+}
+
+@media screen and (max-width: 320px) {
+  .mobile-menu__item {
+    font-size: 26px;
+  }
+  .mobile-contacts__item {
+    font-size: 26px;
+  }
 }
 
 @media screen and (max-width: 767px) {

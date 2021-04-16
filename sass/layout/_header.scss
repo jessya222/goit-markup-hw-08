@@ -3,6 +3,16 @@
   border-bottom: 1px solid var(--header-border-color);
 }
 
+@media screen and (max-width: 320px) {
+  .mobile-menu__item {
+    font-size: 26px;
+  }
+
+  .mobile-contacts__item {
+    font-size: 26px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .nav__list {
     display: none;
