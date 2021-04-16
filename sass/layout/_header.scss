@@ -4,12 +4,16 @@
 }
 
 @media screen and (max-width: 320px) {
-  .mobile-menu__item {
-    font-size: 26px;
+  .mobile-menu {
+    &__item {
+      font-size: 26px;
+    }
   }
 
-  .mobile-contacts__item {
-    font-size: 26px;
+  .mobile-contacts {
+    &__item {
+      font-size: 26px;
+    }
   }
 }
 
